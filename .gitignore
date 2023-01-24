@@ -4,7 +4,8 @@
 .settings/
 
 # Intellij
-.idea/
+.allure/
+.idea
 *.iml
 *.iws
 
@@ -14,3 +15,4 @@
 # Maven
 log/
 target/
+/.allure/
