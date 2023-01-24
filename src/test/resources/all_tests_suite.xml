@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Selected TestShop's Tests" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="utils.testng.listeners.TestListener"/>
+    </listeners>
+
+    <test name="CHROME TESTS">
+        <parameter name="browserType" value="CHROME"/>
+        <classes>
+            <class name="tests.EmailAddressInMenuTests"/>
+            <class name="tests.MainPageLinkTests"/>
+            <class name="tests.SearchingTests"/>
+            <class name="tests.LoginTests"/>
+            <class name="tests.MenuTests"/>
+            <class name="tests.ShoppingTests"/>
+        </classes>
+    </test>
+
+    <test name="FIREFOX TESTS">
+        <parameter name="browserType" value="FIREFOX"/>
+        <classes>
+            <class name="tests.EmailAddressInMenuTests"/>
+            <class name="tests.MainPageLinkTests"/>
+            <class name="tests.SearchingTests"/>
+            <class name="tests.LoginTests"/>
+            <class name="tests.MenuTests"/>
+            <class name="tests.ShoppingTests"/>
+        </classes>
+    </test>
+
+</suite>
